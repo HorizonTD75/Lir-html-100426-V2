@@ -16,6 +16,16 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
   ].filter(Boolean),
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        bilansBassevision: path.resolve(__dirname, "bilans-bassevision/index.html"),
+        club: path.resolve(__dirname, "club/index.html"),
+        loupeAmelie: path.resolve(__dirname, "boutique/loupe-amelie/index.html"),
+      },
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
