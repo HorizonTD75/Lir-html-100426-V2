@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Merriweather:wght@700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LirElia Design System - Optimized for Low Vision / Accessibility */
+/* All colors MUST be HSL - High contrast ratios for WCAG AAA compliance */
+
+@layer base {
+  :root {
+    /* Primary: Deep trust blue - professional, calming */
+    --primary: 215 80% 25%;
+    --primary-foreground: 45 100% 96%;
+    
+    /* Secondary: Warm gold - high visibility, welcoming */
+    --secondary: 42 90% 55%;
+    --secondary-foreground: 215 80% 15%;
+    
+    /* Background: Warm cream - easier on eyes than pure white */
+    --background: 45 40% 97%;
+    --foreground: 215 60% 15%;
+    
+    /* Cards: Slightly warmer for distinction */
+    --card: 45 30% 99%;
+    --card-foreground: 215 60% 15%;
+    
+    /* Muted: Soft blue-gray */
+    --muted: 210 20% 92%;
+    --muted-foreground: 215 50% 20%;
+    
+    /* Accent: Teal for actions */
+    --accent: 175 60% 35%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Popover */
+    --popover: 45 30% 99%;
+    --popover-foreground: 215 60% 15%;
+    
+    /* Destructive */
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders - visible but not harsh */
+    --border: 215 30% 80%;
+    --input: 215 30% 85%;
+    --ring: 215 80% 35%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom tokens for LirElia */
+    --hero-gradient: linear-gradient(135deg, hsl(215 80% 25%) 0%, hsl(215 70% 35%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(215 60% 15% / 0.15);
+    --card-shadow-hover: 0 8px 30px -4px hsl(215 60% 15% / 0.2);
+    --highlight: 42 90% 55%;
+    --success: 145 60% 35%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Sidebar tokens */
+    --sidebar-background: 215 80% 20%;
+    --sidebar-foreground: 45 100% 96%;
+    --sidebar-primary: 42 90% 55%;
+    --sidebar-primary-foreground: 215 80% 15%;
+    --sidebar-accent: 215 70% 30%;
+    --sidebar-accent-foreground: 45 100% 96%;
+    --sidebar-border: 215 60% 35%;
+    --sidebar-ring: 42 90% 55%;
+  }
+
+  .dark {
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 80% 50%;
+    --secondary-foreground: 215 80% 10%;
+    --background: 215 50% 10%;
+    --foreground: 45 30% 95%;
+    --card: 215 45% 12%;
+    --card-foreground: 45 30% 95%;
+    --popover: 215 45% 12%;
+    --popover-foreground: 45 30% 95%;
+    --muted: 215 40% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 175 50% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 40% 25%;
+    --input: 215 40% 25%;
+    --ring: 42 80% 50%;
+    --sidebar-background: 215 55% 8%;
+    --sidebar-foreground: 45 30% 95%;
+    --sidebar-primary: 42 80% 50%;
+    --sidebar-primary-foreground: 215 80% 10%;
+    --sidebar-accent: 215 45% 15%;
+    --sidebar-accent-foreground: 45 30% 95%;
+    --sidebar-border: 215 40% 20%;
+    --sidebar-ring: 42 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    min-width: 0;
+  }
+
+  html,
+  body,
+  #root {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    font-size: 18px; /* Base size larger for accessibility */
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans 3', system-ui, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  /* Focus states for accessibility */
+  :focus-visible {
+    @apply outline-none ring-4 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Skip link for keyboard navigation */
+  .skip-link {
+    @apply absolute left-4 top-4 z-50 -translate-y-20 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold transition-transform;
+  }
+  
+  .skip-link:focus {
+    @apply translate-y-0;
+  }
+}
+
+@layer components {
+  /* High contrast section variants */
+  .section-light {
+    @apply bg-background;
+  }
+  
+  .section-cream {
+    @apply bg-muted;
+  }
+  
+  .section-primary {
+    @apply bg-primary text-primary-foreground;
+  }
+  
+  .section-accent {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  /* Card variants for accessibility */
+  .card-elevated {
+    @apply bg-card rounded-xl border-2 border-border;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card-elevated:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .card-highlighted {
+    @apply bg-card rounded-xl border-2 border-secondary;
+    box-shadow: 0 0 0 4px hsl(var(--secondary) / 0.2), var(--card-shadow);
+  }
+
+  /* Button base improvements */
+  .btn-large {
+    @apply px-8 py-4 text-lg font-bold rounded-xl transition-all duration-200;
+    min-height: 56px;
+  }
+
+  .btn-primary {
+    @apply btn-large bg-primary text-primary-foreground hover:bg-primary/90;
+    box-shadow: 0 4px 14px -3px hsl(var(--primary) / 0.4);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 6px 20px -3px hsl(var(--primary) / 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    @apply btn-large bg-secondary text-secondary-foreground hover:bg-secondary/90;
+    box-shadow: 0 4px 14px -3px hsl(var(--secondary) / 0.4);
+  }
+
+  .btn-outline {
+    @apply btn-large bg-transparent border-2 border-current hover:bg-primary hover:text-primary-foreground;
+  }
+
+  /* Text utilities for low vision */
+  .text-large {
+    @apply text-xl leading-relaxed;
+  }
+
+  .text-xlarge {
+    @apply text-2xl leading-relaxed;
+  }
+
+  /* Badge/tag styles */
+  .badge-info {
+    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-secondary/20 text-secondary-foreground border border-secondary/30;
+  }
+  
+  .badge-success {
+    @apply inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-accent/20 text-accent border border-accent/30;
+  }
+
+  /* Icon containers */
+  .icon-circle {
+    @apply w-16 h-16 rounded-full flex items-center justify-center bg-secondary/20 text-secondary;
+  }
+
+  .icon-circle-primary {
+    @apply w-16 h-16 rounded-full flex items-center justify-center bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from { 
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Delay utilities */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+}

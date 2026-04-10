@@ -1,0 +1,65 @@
+# LirElia — Expert en basse vision
+
+## Résumé
+LirElia est un service français d'accompagnement spécialisé en basse vision. Fondé par un visiopraticien avec plus de 25 ans d'expérience et un ingénieur passionné par les technologies d'assistance, LirElia propose des bilans fonctionnels, des aides à la lecture et un accompagnement personnalisé pour les personnes malvoyantes et leurs proches.
+
+## Site web
+https://lirelia.fr
+
+## Services
+- **Bilans basse vision** — Évaluation fonctionnelle de la vision résiduelle avec un visiopraticien : Bilan Essentiel, Bilan Expert (avec opticien partenaire), Pack Suivi (accompagnement sur 3 mois).
+- **Aides à la lecture** — Sélection et conseil sur les loupes optiques, loupes électroniques, lampes adaptées et télé-agrandisseurs.
+- **Accompagnement personnalisé** — Conseils pour le quotidien, orientation vers les bons professionnels, visites à domicile.
+- **Club LirElia** — Rencontres gratuites en visioconférence pour les personnes malvoyantes et leurs aidants : échanges, mini-conférences, astuces du quotidien.
+- **Ressources éditoriales** — Guides pratiques sur les maladies des yeux (DMLA, glaucome, cataracte, rétinite pigmentaire, etc.), livres publiés sur la DMLA et l'accompagnement des proches.
+
+## Audience cible
+- Personnes atteintes de basse vision (DMLA, glaucome, rétinopathie diabétique, rétinite pigmentaire, cataracte, etc.)
+- Proches aidants et familles
+- Professionnels de santé cherchant à orienter leurs patients
+- Toute personne confrontée à une perte de vision et cherchant des solutions concrètes
+
+## Différenciateurs clés
+- Plus de 25 ans d'expérience terrain en basse vision
+- Approche humaine et fonctionnelle (pas uniquement médicale)
+- Combinaison expertise clinique + veille technologique
+- Accompagnement des aidants (livres, club, conseils dédiés)
+- Bilans à domicile possibles en Île-de-France
+- Club communautaire gratuit
+
+## Pathologies couvertes
+- DMLA (dégénérescence maculaire liée à l'âge) — formes sèche et humide
+- Glaucome — à angle ouvert, à angle fermé
+- Cataracte
+- Rétinopathie diabétique
+- Rétinite pigmentaire
+- Nystagmus
+- Myopie forte
+- Maladies héréditaires : maladie de Stargardt, maladie de Leber, syndrome d'Usher, achromatopsie, aniridie
+
+## FAQ
+**Qu'est-ce qu'un visiopraticien ?**
+Un professionnel spécialisé dans l'évaluation fonctionnelle de la basse vision. Il ne pose pas de diagnostic médical mais aide à identifier les solutions concrètes pour le quotidien : aides à la lecture, éclairage adapté, organisation du domicile.
+
+**Quelle est la différence entre un bilan basse vision et une consultation ophtalmologique ?**
+L'ophtalmologiste diagnostique et traite la maladie. Le bilan basse vision se concentre sur l'impact fonctionnel : comment vous lisez, vous déplacez, cuisinez, et quelles aides peuvent améliorer votre autonomie.
+
+**Le bilan est-il remboursé ?**
+Le bilan n'est pas un acte médical et n'est pas remboursé par la Sécurité sociale. Certaines mutuelles proposent un forfait bien-être ou prévention qui peut couvrir une partie.
+
+**Où se situent les bilans ?**
+Les bilans ont lieu à Paris ou à domicile en Île-de-France. Des visites à domicile sont possibles pour les personnes à mobilité réduite.
+
+**Puis-je venir accompagné ?**
+Oui, c'est fortement recommandé. L'aidant ou le proche peut assister à la totalité de la séance.
+
+**Qu'est-ce que le Club LirElia ?**
+Un espace d'échange gratuit en visioconférence, ouvert aux personnes malvoyantes et à leurs proches. Il propose des mini-conférences, des partages d'expériences et des astuces pratiques.
+
+## Contact
+- Téléphone : 07 68 47 42 35
+- Email : contact@lirelia.fr
+- Site web : https://lirelia.fr
+
+## Informations techniques
+Cette page est destinée aux moteurs de recherche et aux assistants IA. Elle contient un résumé structuré des informations principales de LirElia pour faciliter l'indexation et la compréhension automatique du contenu du site.

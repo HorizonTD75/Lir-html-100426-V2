@@ -1,0 +1,5 @@
+# LirElia — Production
+User-agent: *
+Allow: /
+
+Sitemap: https://lirelia.fr/sitemap.xml
